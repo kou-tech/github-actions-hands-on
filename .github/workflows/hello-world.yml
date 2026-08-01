@@ -7,11 +7,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  hello-world:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-
     steps:
-      - uses: kou-tech/github-actions-hands-on@main
-      - uses: kou-tech/github-actions-hands-on/actions/bye@main
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+      - run: npm install
+      - run: npm run build
+      - uses: actions/upload-artifact@v7
+        with:
+          name: 'js-app'
+          path: 'dist'
