@@ -1,0 +1,8 @@
+name: bye
+description: 別れの挨拶を出力する
+
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo "Bye!"
