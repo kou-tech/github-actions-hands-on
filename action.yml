@@ -1,0 +1,8 @@
+name: greet
+description: 挨拶を出力する
+
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo "Hello, GitHub Actions!"
