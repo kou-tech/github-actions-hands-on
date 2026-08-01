@@ -13,5 +13,5 @@ jobs:
       contents: read
 
     steps:
-      - uses: <owner>/github-actions-hands-on@main
-      - uses: <owner>/github-actions-hands-on/actions/bye@main
+      - uses: kou-tech/github-actions-hands-on@main
+      - uses: kou-tech/github-actions-hands-on/actions/bye@main
